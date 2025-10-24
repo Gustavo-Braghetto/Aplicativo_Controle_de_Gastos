@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    // Método para tentar login
+
     private void attemptLogin() {
         String nome = nomeLogin.getText().toString().trim();
         String senha = senhaLogin.getText().toString().trim();
