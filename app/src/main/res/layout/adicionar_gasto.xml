@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Novo Gasto"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <!-- Layout do Nome do Gasto -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/NomeGastoLayout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/NomeGasto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o nome do novo gasto"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Layout do Valor do Gasto -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ValorGastoLayout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/NomeGastoLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.05">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ValorGasto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o valor do novo gasto"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Botão Salvar -->
+    <Button
+        android:id="@+id/SalvarGasto"
+        android:layout_width="139dp"
+        android:layout_height="64dp"
+        android:text="Salvar"
+        app:layout_constraintTop_toBottomOf="@id/ValorGastoLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <!-- Botão Voltar -->
+    <Button
+        android:id="@+id/Voltar"
+        android:layout_width="139dp"
+        android:layout_height="64dp"
+        android:text="Voltar"
+        app:layout_constraintTop_toBottomOf="@id/SalvarGasto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.05"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
